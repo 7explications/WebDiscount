@@ -13,6 +13,7 @@ namespace Core.Discount.Rules
 
         public decimal CalculateDiscount(Customer customer, Item item)
         {
+           
             return customer.IsStoreEmployee() ? item.Amount * 0.30m : 0;
         }
     }
